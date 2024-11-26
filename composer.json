@@ -14,13 +14,18 @@
         }
     ],
     "require": {
-        "php": ">=7.3"
+        "php": ">=8.1"
     },
+    "type": "library",
+    "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
                 "Devzihad\\EnvEditor\\EnvEditorServiceProvider"
             ]
+        },
+        "config": {
+            "optimize-autoloader": true
         }
     }
 }
