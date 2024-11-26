@@ -1,31 +1,24 @@
 {
     "name": "devzihad/env-editor",
     "description": "This package allows editing Laravel .env files programmatically.",
-    "license": "MIT",
     "type": "library",
-    "autoload": {
-        "psr-4": {
-            "Devzihad\\EnvEditor\\": "src/"
-        }
-    },
+    "license": "MIT",
     "authors": [
         {
             "name": "Zihadul Islam",
             "email": "devzihad2022@gmail.com"
         }
     ],
+    "minimum-stability": "stable",
     "require": {
         "php": ">=8.1"
     },
-    "minimum-stability": "stable",
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Devzihad\\EnvEditor\\EnvEditorServiceProvider"
-            ]
-        },
-        "config": {
-            "optimize-autoloader": true
+    "autoload": {
+        "psr-4": {
+            "Devzihad\\EnvEditor\\": "src/"
         }
+    },
+    "config": {
+        "optimize-autoloader": true
     }
 }
