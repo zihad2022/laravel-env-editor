@@ -1,6 +1,6 @@
 {
     "name": "devzihad/env-editor",
-    "description": "This pakage for edit laravel .env files",
+    "description": "This package allows editing Laravel .env files programmatically.",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -14,7 +14,14 @@
         }
     ],
     "require": {
-      "php": "^8.0",
-    "illuminate/support": "^9.0|^10.0"
+        "php": "^7.3|^8.0|^8.1|^8.2",
+        "illuminate/support": "^8.0|^9.0|^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Devzihad\\EnvEditor\\EnvEditorServiceProvider"
+            ]
+        }
     }
 }
